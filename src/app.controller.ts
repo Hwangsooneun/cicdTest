@@ -7,7 +7,7 @@ export class AppController {
   constructor(private readonly appService: AppService) {}
 
   @Get()
-  getHello(@Response() res) {
-    res.sendFile(path.join(__dirname, '..', '..', 'public', 'index.html'));
+  getHello() {
+    return this.appService.getHello();
   }
 }
