@@ -12,5 +12,5 @@ npm run build
 
 #start our node app in the background(pm2)
 
-cd /home/ubuntu/cucdTest/dist/src
-authbind --deep pm2 start main.js
+cd /home/ubuntu/cicdTest
+npm run start:prod
