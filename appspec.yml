@@ -2,7 +2,7 @@ version: 0.0
 os: linux
 files:
   - source: /
-    destination: /home/ubuntu/cicdTest
+    destination: /home/ubuntu/server
     overwrite: true
 hooks:
   ApplicationStop:
