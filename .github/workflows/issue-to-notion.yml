@@ -1,0 +1,16 @@
+name: issue_to_notion
+on:
+  issues:
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: Notion Card Creator
+        uses: dodo4114/issue-to-notion@v1.1.1
+        env:
+          NOTION_TOKEN: a3f34b9d723324ba415ac3833695770063a19466c60213a9c7edb7c4bb402d27550a791a87335563791780fc49d33ddff18ffa16ddaaa7c36a1835a4e0595e1834eb7af0606e0d5765f2d3e3de36
+          DATABASE_URL: https://www.notion.so/ac67e80924a6491c99861bc2b0f0e5fc?v=ec4988fc8a224916857b15a18cfb9ffc
+          PROPERTY_NAME : 서버 개발 진행 사항
+          STATE_OPEN : 시작 전
+          STATE_CLOSED : 진행 중
