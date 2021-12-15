@@ -1,4 +1,4 @@
-name: issue_to_notion
+name: issue_to_notion_card
 on:
   issues:
 jobs:
@@ -12,5 +12,3 @@ jobs:
           NOTION_TOKEN: ${{ secrets.NOTION_TOKEN }}
           DATABASE_URL: https://www.notion.so/ac67e80924a6491c99861bc2b0f0e5fc?v=ec4988fc8a224916857b15a18cfb9ffc
           PROPERTY_NAME : state
-          STATE_OPEN : open
-          STATE_CLOSED : close
