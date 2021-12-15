@@ -15,7 +15,7 @@ jobs:
         uses: Sajantoor/Notion-GitHub-Issues-Automation@1.0.0
         with:
             # Your current repository.
-            repo: https://github.com/Hwangsooneun/cicdTest
+            repo: Hwangsooneun/cicdTest
             # Your Notion API Key
             NOTION_API_KEY: secret_LiDDIMsEPHx7HZOkQbJ9ublGeeFY32PLzq8wXACtFye
             # Your Notion database ID
